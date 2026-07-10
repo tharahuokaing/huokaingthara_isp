@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HUOKAING THARA | Imperial ISP Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Holographic Matrix Background Matrix -->
+    <canvas id="hologram-canvas"></canvas>
+
+    <!-- Main System Interface Container -->
+    <div class="hologram-container">
+        <header>
+            <div class="brand-badge">
+                <div class="node-icon">
+                    <div class="ring-cyan"></div>
+                    <div class="ring-purple"></div>
+                </div>
+                <span class="est-tag">CORE // 2026</span>
+            </div>
+            <h1 class="glitch-text">HUOKAING THARA ISP</h1>
+            <div id="epoch-stabilizer">CORE_STABILITY: SYNCHRONIZING...</div>
+        </header>
+
+        <!-- The 20-Package Array -->
+        <div id="package-grid"></div>
+
+        <!-- Telemetry Logging Station -->
+        <div class="bank-panel">
+            <h3>SATELLITE IP BANK & TELEMETRY</h3>
+            <div id="ip-display">READY FOR NEURAL HANDSHAKE...</div>
+        </div>
+    </div>
+
+    <!-- 3-Second Automated Security Handshake -->
+    <div id="captcha-overlay" style="display: none;">
+        <div class="captcha-box">
+            <h2>NEURAL VERIFICATION</h2>
+            <p>Select the IMPERIAL node security token to authorize your 64-bit terminal connection.</p>
+            <div class="captcha-options">
+                <div class="puzzle-btn" onclick="location.reload()">0101</div>
+                <div class="puzzle-btn correct-node" onclick="unlockSystem()">THARA</div>
+                <div class="puzzle-btn" onclick="location.reload()">1010</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
